@@ -1,0 +1,51 @@
+@mixin Spacing($sizes, $prefix: "u-", $suffix: "") {
+  @for $i from 0 through (length($sizes) - 1) {
+    $size: nth($sizes, ($i + 1));
+    .#{$prefix}p#{$i}#{$suffix} {
+      padding: $size;
+    }
+    .#{$prefix}pt#{$i}#{$suffix} {
+      padding-top: $size;
+    }
+    .#{$prefix}pr#{$i}#{$suffix} {
+      padding-right: $size;
+    }
+    .#{$prefix}pb#{$i}#{$suffix} {
+      padding-bottom: $size;
+    }
+    .#{$prefix}pl#{$i}#{$suffix} {
+      padding-left: $size;
+    }
+    .#{$prefix}py#{$i}#{$suffix} {
+      padding-top: $size;
+      padding-bottom: $size;
+    }
+    .#{$prefix}px#{$i}#{$suffix} {
+      padding-right: $size;
+      padding-left: $size;
+    }
+    .#{$prefix}m#{$i}#{$suffix} {
+      margin: $size;
+    }
+    .#{$prefix}mt#{$i}#{$suffix} {
+      margin-top: $size;
+    }
+    .#{$prefix}mr#{$i}#{$suffix} {
+      margin-right: $size;
+    }
+    .#{$prefix}mb#{$i}#{$suffix} {
+      margin-bottom: $size;
+    }
+    .#{$prefix}ml#{$i}#{$suffix} {
+      margin-left: $size;
+    }
+    .#{$prefix}my#{$i}#{$suffix} {
+      margin-top: $size;
+      margin-bottom: $size;
+    }
+    .#{$prefix}mx#{$i}#{$suffix} {
+      margin-right: $size;
+      margin-left: $size;
+    }
+  }
+}
