@@ -28,7 +28,7 @@ It generates these classes:
 
 * p = Padding
 * py = Padding top and bottom
-* pz = Padding on the left and right
+* px = Padding on the left and right
 * pt = Padding top
 * pb = Padding bottom
 * pl = Padding left
